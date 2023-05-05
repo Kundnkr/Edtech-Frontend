@@ -73,7 +73,7 @@ export default function Register() {
                         <input required type="text" name="first_name" id="first_name" maxlength="20" pattern="[A-Za-z.]{1,20}" placeholder='First Name' onChange={handlechange} />
 
                         
-                        <input required type="text" name='last_name' maxlength="20" pattern="[A-Za-z.]{1,20}" placeholder='Last Name' onChange={handlechange} />
+                        <input required type="text" name='last_name' maxlength="20" pattern="[A-Za-z]{1,20}" placeholder='Last Name' onChange={handlechange} />
 
                         
                         <input required type="email" name='email' placeholder='Email' onChange={handlechange} />
@@ -82,10 +82,10 @@ export default function Register() {
                         <input required type="tel" name='phone' minlength="10" maxlength="10" pattern="[0-9]{1,10}" placeholder='Mobile' onChange={handlechange} />
 
                         
-                        <input required type="password" name='password' placeholder='Password' onChange={handlechange}/>
+                        <input required type="password" minlength="6" maxlength="15" name='password' placeholder='Password' onChange={handlechange}/>
 
                         
-                        <input required type="password" name='confirm_password' placeholder='Confirm Password' onChange={handlechange}/>
+                        <input required type="password" minlength="6" maxlength="15" name='confirm_password' placeholder='Confirm Password' onChange={handlechange}/>
                         <button>REGISTER</button>
                     </form>
                 </div>
