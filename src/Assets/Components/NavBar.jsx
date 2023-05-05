@@ -12,7 +12,7 @@ export default function NavBar() {
                     <Link to="/profilecomplete">Student Data </Link>
                     <Link to="/profilemgmt">Profile</Link>
                     <Link to="/sign-up">Sign Up</Link>
-                    <Link to="/otp-verify">OTP-page</Link>
+                    
                     <Link to="/login">Login</Link>
                     <Link to="/change_password">Change Password</Link>
                 </div>
