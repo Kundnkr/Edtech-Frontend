@@ -70,16 +70,16 @@ export default function Register() {
                         <input required type="text" name='username' id='username' placeholder='Username' onChange={handlechange} />
                         
                        
-                        <input required type="text" name="first_name" id="first_name" placeholder='First Name' onChange={handlechange} />
+                        <input required type="text" name="first_name" id="first_name" maxlength="20" pattern="[A-Za-z.]{1,20}" placeholder='First Name' onChange={handlechange} />
 
                         
-                        <input required type="text" name='last_name' placeholder='Last Name' onChange={handlechange} />
+                        <input required type="text" name='last_name' maxlength="20" pattern="[A-Za-z.]{1,20}" placeholder='Last Name' onChange={handlechange} />
 
                         
                         <input required type="email" name='email' placeholder='Email' onChange={handlechange} />
 
                         
-                        <input required type="tel" name='phone' placeholder='Mobile' onChange={handlechange} />
+                        <input required type="tel" name='phone' minlength="10" maxlength="10" pattern="[0-9]{1,10}" placeholder='Mobile' onChange={handlechange} />
 
                         
                         <input required type="password" name='password' placeholder='Password' onChange={handlechange}/>
