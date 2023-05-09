@@ -14,7 +14,7 @@ a{
   display: flex;
   height: 60px;
   background-color: black;
-  border-bottom: 2px solid rgb(255, 47, 47);
+  /* border-bottom: 2px solid rgb(255, 47, 47); */
   align-items: center;
   padding: 0 20px;
 
@@ -33,4 +33,78 @@ a{
   justify-content: right;
   width: 100%;
   gap: 5rem;
+  position: relative;
+}
+.nav .items a{
+  padding: 10px;
+}
+
+
+/* ==========DropDown========= */
+
+.dropdowmItem{
+  background-color: rgb(0, 0, 0);
+  min-width:300px;
+  border-radius: 5px;
+  display: flex;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  border: 1px solid rgb(0, 0, 0);
+  top: 40px;
+  /* right: 202px; */
+  z-index: 20;
+  transition: 0.6s;
+}
+.dropdown{
+  padding: 10px;
+  cursor: pointer;
+}
+.dropdown:hover .dropdowmItem{
+  display: flex;
+  position: absolute;
+  right: 100px;
+}
+
+.dropdowmItem div{
+  background-color: rgb(0, 0, 0);
+  width: 300px;
+  text-align: center;
+  display:none;
+  flex-direction: column;
+  border-radius: 5px;
+  position: absolute;
+  right: 297px;
+  z-index: 100;
+}
+.dropdowmItem div:hover{
+  display: flex;
+}
+
+.dropdowmItem a{
+  /* border: 1px solid red; */
+  padding: 10px 10px;
+  color: rgb(255, 255, 255);
+}
+.dropdowmItem a:hover{
+  background-color: rgb(63, 63, 63);
+}
+
+.dropdowmItem .webdev:hover + .webdev-s-c{
+  display: flex;
+  
+}
+.dropdowmItem .digitalmarketing:hover + .digitalmarketing-s-c{
+  display: flex;
+  
+}
+.dropdowmItem .bussinessmanagement:hover + .bussinessmanagement-s-c{
+  display: flex;
+}
+.dropdowmItem .dataanalytics:hover + .dataanalytics-s-c{
+  display: flex;
+}
+.dropdowmItem .qualityassurance:hover + .qualityassurance-s-c{
+  display: flex;
 }

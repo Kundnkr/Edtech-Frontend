@@ -3,10 +3,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import '../Stylesheet/Regsiter.css';
 import AIM from '../Images/AIM.png'
-import keyboy from '../Images/keyboy.png'
 import profilepic from '../Images/profilePic.gif'
-import loginsecurity from '../Images/login-security.png'
-import market from '../Images/market.png'
 import { useNavigate } from 'react-router-dom';
 
 let email = "";
@@ -54,43 +51,58 @@ export default function Register() {
             );
         })
     }
-
-
-
     return (
         <>
+
             <section className="registration-box">
                 <div className="content">
                     <div className="disc">
                         <img className='keyboy' src={profilepic} alt="" />
-                        <img className='aimLogo' src={AIM} alt="" /> 
+                        <img className='aimLogo' src={AIM} alt="" />
                     </div>
                 </div>
-                <div id='registration-from' onSubmit={handlesubmit} >
+                <div id='registration-from' className='registration-from' onSubmit={handlesubmit} >
                     <div className="img">
-                        
+
                     </div>
                     <form id='form' className="form-item">
+                        <h1>Registration</h1>
 
-                        <input required type="text" name='username' id='username' placeholder='Username' onChange={handlechange} />
+                        <div className="input-box">
+                            <input required type="text" name='username' id='username'  onChange={handlechange} />
+                            <label htmlFor="username">Username</label>
+                        </div>
+
+                        <div className="input-box">
+                            <input required type="text" name="first_name" id="first_name" maxlength="20" pattern="[A-Za-z.]{1,20}"  onChange={handlechange} />
+                            <label htmlFor="first_name">First Name</label>
+                        </div>
+
+                        <div className="input-box">
+                            <input required type="text" name='last_name' maxlength="20" pattern="[A-Za-z]{1,20}"  onChange={handlechange} />
+                            <label htmlFor="last_name">Last Name</label>
+                        </div>
+
+                        <div className="input-box">
+                            <input required type="email" name='email'  onChange={handlechange} />
+                            <label htmlFor="email">Email</label>
+                        </div>
+
+                        <div className="input-box">
+                            <input required type="tel" name='phone' minlength="10" maxlength="10" pattern="[0-9]{1,10}"  onChange={handlechange} />
+                            <label htmlFor="phone">Phone</label>
+                        </div>
 
 
-                        <input required type="text" name="first_name" id="first_name" maxlength="20" pattern="[A-Za-z.]{1,20}" placeholder='First Name' onChange={handlechange} />
+                        <div className="input-box">
+                            <input required type="password" minlength="6" maxlength="15" name='password' onChange={handlechange} />
+                            <label htmlFor="password">Password</label>
+                        </div>
+                        <div className="input-box">
+                            <input required type="password" minlength="6" maxlength="15" name='confirm_password'  onChange={handlechange} />
+                            <label htmlFor="">Confirm Password</label>
+                        </div>
 
-
-                        <input required type="text" name='last_name' maxlength="20" pattern="[A-Za-z]{1,20}" placeholder='Last Name' onChange={handlechange} />
-
-
-                        <input required type="email" name='email' placeholder='Email' onChange={handlechange} />
-
-
-                        <input required type="tel" name='phone' minlength="10" maxlength="10" pattern="[0-9]{1,10}" placeholder='Mobile' onChange={handlechange} />
-
-
-                        <input required type="password" minlength="6" maxlength="15" name='password' placeholder='Password' onChange={handlechange} />
-
-
-                        <input required type="password" minlength="6" maxlength="15" name='confirm_password' placeholder='Confirm Password' onChange={handlechange} />
                         <button>REGISTER</button>
                     </form>
                 </div>

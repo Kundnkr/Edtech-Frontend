@@ -50,7 +50,7 @@ export default function EmailVerify() {
                 <div className="email-verify-head">
                     <img src={mail} alt="" />
                     <h1>Verify Your Email Address</h1>
-                    <p>You've entered {email} as the email address for your account <br />
+                    <p>You've entered <span className='userEmail'>{email}</span> as the email address for your account <br />
                         Please verify the email address by entering the otp you recived on your mail</p>
                 </div>
                 <form onSubmit={submithandler} className="otp-content">
