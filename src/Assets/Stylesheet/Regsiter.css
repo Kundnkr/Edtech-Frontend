@@ -57,23 +57,22 @@
     position: relative;
 }
 
-.registration-from form label{
-    z-index: 20;
-    width: 50%;
-    position: absolute;
-    transform: translateX(-29vw) translateY(1.3vh);
-    pointer-events: none;
-}
+
 .input-box label{
     opacity: 0.7;
     transition: 0.3s;
+    position: absolute;
+    transform:translateX(10px) translateY(40px);
+    pointer-events: none;
 }
-.input-box input:focus~label, .input-box input:valid~label{
-    transform: translateY(-3.5vh) translateX(-29.5vw) ;
-    color: white;
-    opacity: 1;
+.input-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
-
+.input-box input:focus~label{
+    transform: translateY(5px);
+}
 @keyframes toofoo{
     0% {transform: translateY(-15px);}
     50% {transform: translateY(0px);}
@@ -123,7 +122,8 @@
 #registration-from .form-item input{
     width: 90%;
     height: 40px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 0px;
     padding: 10px;
     border: 1px solid rgb(123, 122, 122);
     border-radius: 5px;
@@ -153,6 +153,7 @@
     background-color: #E40814;
     letter-spacing:1px;
     transition: 0.5s;
+    margin-top: 20px;
 
 }
 

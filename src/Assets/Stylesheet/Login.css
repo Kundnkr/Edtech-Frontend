@@ -41,28 +41,28 @@
     color: white;
     margin-bottom: 40px;
 }
-.login-page form .emailLablel{
-    position: absolute;
-    top: 33.5%;
-    left: 10px;
-    pointer-events: none;
-}
 .input-box-login label{
     transition: 0.3s;
 }
-.login-page form .passLablel{
+
+.input-box-login{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.input-box-login label{
+    color: rgb(140, 137, 137);
     position: absolute;
-    top: 56.5%;
-    left: 10px;
+    transform: translateX(10px) translateY(40px);
     pointer-events: none;
 }
-.input-box-login input:focus~label, .input-box-login input:valid~label{
-    transform: translateY(-35px) translateX(-10px);
-    color: white;
+.input-box-login input:focus~label{
+    transform: translateY(-2px);
+    color: white    ;
 }
-
 .login-page form input{
-    /* margin: auto; */
+    margin-bottom: 5px;
+    margin-top: 30px;
     outline: none;
     border-radius: 5px;
     width: 90%;
