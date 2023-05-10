@@ -72,6 +72,7 @@
 }
 .input-box input:focus~label{
     transform: translateY(5px);
+    color: white;
 }
 @keyframes toofoo{
     0% {transform: translateY(-15px);}
