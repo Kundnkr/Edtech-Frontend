@@ -36,11 +36,11 @@ export default function Login() {
                 </div>
                 <form onSubmit={submithandler}>
                     <h1>Login</h1>
-                    <div className="input-box">
+                    <div className="input-box-login">
                         <input required type="email" className='email' id='email' name='email' onChange={changehandler} />
                         <label htmlFor="email" className='emailLablel'>Your Email</label>
                     </div>
-                    <div className="input-box">
+                    <div className="input-box-login">
                         <input required id='password' type="password" className='password' name='password' onChange={changehandler} />
                         <label htmlFor="password" className='passLablel'>Password</label>
                     </div>
