@@ -15,6 +15,7 @@
     flex-direction: row;
     gap: 5%;
     width: 80%;
+    min-height: 40vh;
     margin: auto;
     border-radius: 25px;
     border: 1px solid rgb(255, 255, 255);
@@ -43,38 +44,9 @@
     z-index: 10;
     bottom: 20px;
     left: 10px;
-    /* animation-name: toofoo;
-    animation-timing-function: ease-in-out;
-    animation-duration: 8s;
-    animation-iteration-count: infinite; */
     
 }
 
-.disc .loginsecurity{
-    width: 150px;
-    z-index: 5;
-    top: 160px;
-    left: 30px;
-    animation-name: toofoo2;
-    animation-timing-function: ease-in-out;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    
-}
-.disc .market{
-    width: 250px;
-    z-index: 8;
-    bottom: 80px;
-    right: 10px;
-    animation-name: toofoo;
-    animation-timing-function: ease-in-out;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    
-}
-.disc .robot{
-    width: 250px;
-}
 
 .disc .aimLogo{
     width: 100px;
@@ -89,7 +61,7 @@
     z-index: 20;
     width: 50%;
     position: absolute;
-    transform: translateX(-29vw) translateY(10px);
+    transform: translateX(-29vw) translateY(1.3vh);
     pointer-events: none;
 }
 .input-box label{
@@ -97,8 +69,8 @@
     transition: 0.3s;
 }
 .input-box input:focus~label, .input-box input:valid~label{
-    transform: translateY(-22px) translateX(-403px) !important;
-    color: white !important;
+    transform: translateY(-3.5vh) translateX(-29.5vw) ;
+    color: white;
     opacity: 1;
 }
 

@@ -62,9 +62,6 @@ export default function Register() {
                     </div>
                 </div>
                 <div id='registration-from' className='registration-from' onSubmit={handlesubmit} >
-                    <div className="img">
-
-                    </div>
                     <form id='form' className="form-item">
                         <h1>Registration</h1>
 
