@@ -70,7 +70,7 @@
     flex-direction: column;
     position: relative;
 }
-.input-box input:focus~label{
+.input-box input:focus~label, .input-box input:valid~label{
     transform: translateY(5px);
     color: white;
 }
