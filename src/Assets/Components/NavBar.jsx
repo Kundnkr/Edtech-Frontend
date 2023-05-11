@@ -8,7 +8,7 @@ export default function NavBar() {
             <header className='nav'>
                 <div className="logo">
                     <img src={AimWhite} alt="" />
-                </div>
+                    </div>
                 <div className="items">
                     <div className="dropdown">
                         <Link className='dropdownCourses'>COURSES</Link>
@@ -48,6 +48,7 @@ export default function NavBar() {
                     <Link to="/sign-up">SIGN UP</Link>
                     <Link to="/login">LOGIN</Link>
                     <Link to='/aboutus'>ABOUT US</Link>
+                    
                 </div>
             </header>
         </div>

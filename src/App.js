@@ -10,6 +10,7 @@ import Home from './Assets/Components/Home';
 import StudentProfile from './Assets/Components/StudentProfile';
 import ProfileManagement from './Assets/Components/ProfileManagement';
 import About from './Assets/Components/About';
+import Otp from './Assets/Components/EmailVerify';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path='/change_password' element={<ResetPass/>} ></Route>
         <Route path='/forget_password' element={<ForgetPass/>} ></Route>
         <Route path='/aboutus' element={<About/>} ></Route>
+        <Route path='/otp' element={<Otp/>} ></Route>
+
       </Routes>
     </Router>
   );

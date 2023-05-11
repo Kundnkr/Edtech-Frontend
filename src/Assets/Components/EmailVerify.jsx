@@ -1,34 +1,39 @@
 import '../Stylesheet/EmailVerify.css'
-import {React, useEffect} from 'react'
+import { React, useEffect } from 'react'
 import mail from '../Images/mail.png';
 import axios from 'axios';
-import {email} from './Register';
-import { useNavigate} from 'react-router-dom';
+import { email } from './Register';
+import { useNavigate } from 'react-router-dom';
 
+let move = (e) => {
+    let target = e.target;
+    if (target.nextElementSibling) {
+        target.nextElementSibling.focus();
+    }
+}
 export default function EmailVerify() {
-    const Navigate = useNavigate();
-
    
-
+    const Navigate = useNavigate();
     let filled = "";
     let ChangeHandler = (e) => {
+        move(e);
         filled += e.target.value;
     }
     let submithandler = (e) => {
         e.preventDefault();
         const otpverify = {
-            email:email,
-            otp:filled
+            email: email,
+            otp: filled
         }
-        axios.post('https://testapp-9prn.onrender.com/api/verify/',otpverify).then((res)=>{
+        axios.post('https://testapp-9prn.onrender.com/api/verify/', otpverify).then((res) => {
             alert(res.data.msg);
-            if(res.data.status === 200){
+            if (res.data.status === 200) {
                 Navigate('/');
             }
-        }).catch((err)=>{
+        }).catch((err) => {
             alert("Please Try Again");
         })
-        
+
     }
     return (
         <>
