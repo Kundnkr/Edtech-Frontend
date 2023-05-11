@@ -18,6 +18,7 @@ export default function Login() {
         setuser({ ...user, [e.target.name]: data })
     }
     let submithandler = (e) => {
+        setisloading(true)
         e.preventDefault();
         const userdata = {
             email: user.email,
@@ -28,7 +29,7 @@ export default function Login() {
         alert(res.data.msg + " with token id :" + res.data.token);
         }).catch((err) => {
             setisloading(false);
-            alert("Inviled Crediential");
+            alert("Invalid Crediential");
         })
     }
     return (
@@ -52,7 +53,7 @@ export default function Login() {
                         <Link to="/sign-up">Sign Up</Link>
                         <Link to="/forget_password">Forget Password</Link>
                     </div>
-                    <button>Login</button>
+                    <button >Login</button>
                 </form>
             </div>
 
