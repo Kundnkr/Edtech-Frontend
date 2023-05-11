@@ -48,7 +48,6 @@ export default function NavBar() {
                     <Link to="/profilemgmt">PROFILE</Link>
                     <Link to="/sign-up">SIGN UP</Link>
                     <Link to="/login">LOGIN</Link>
-                    <Link to="/loading">Loading</Link>
                 </div>
             </header>
         </div>
