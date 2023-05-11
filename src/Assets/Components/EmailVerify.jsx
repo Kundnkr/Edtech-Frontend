@@ -36,7 +36,7 @@ export default function EmailVerify() {
 
     }
     return (
-        <>
+        <div className='email-verify-page'>
             <div className="email-verify">
                 <div className="email-verify-head">
                     <img src={mail} alt="" />
@@ -57,6 +57,6 @@ export default function EmailVerify() {
 
 
 
-        </>
+        </div>
     )
 }
