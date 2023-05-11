@@ -41,6 +41,10 @@ a{
 }
 .nav .items a{
   padding: 10px;
+  transition: 0.3s;
+}
+.nav .items a:hover{
+  color: red;
 }
 
 
