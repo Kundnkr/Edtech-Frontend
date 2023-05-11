@@ -44,10 +44,10 @@ export default function NavBar() {
                             </div>
                         </div>
                     </div>
-                    <Link to="/profilecomplete">PROFILE COMPLETE</Link>
                     <Link to="/profilemgmt">PROFILE</Link>
                     <Link to="/sign-up">SIGN UP</Link>
                     <Link to="/login">LOGIN</Link>
+                    <Link to='/aboutus'>ABOUT US</Link>
                 </div>
             </header>
         </div>

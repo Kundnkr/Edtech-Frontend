@@ -27,8 +27,8 @@
     width: 45%; 
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    /* border-radius: 15px; */
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 1px 5px 5px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 1px 5px 5px;
     color: white;
     display: flex;
     justify-content: center;
@@ -36,25 +36,19 @@
     position: relative;
     /* border: 1px solid red; */
 }
-.disc img{
-    position: absolute;  
-}
+.registration-box .content .disc{
+    height: 90%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+} 
 
-.disc .keyboy{
-    z-index: 10;
-    bottom: 20px;
-    left: 10px;
-    
-}
-
-
-.disc .aimLogo{
+.registration-box .content .disc .aimLogo{
     width: 100px;
-    top: 30px;
-    left: 35%;
-}
-.registration-from{
-    position: relative;
 }
 
 
@@ -74,16 +68,6 @@
     transform: translateY(5px);
     color: white;
 }
-@keyframes toofoo{
-    0% {transform: translateY(-15px);}
-    50% {transform: translateY(0px);}
-    100% {transform: translateY(-15px);}
-}
-@keyframes toofoo2{
-    0% {transform: translateX(-10px);}
-    50% {transform: translateX(0px);}
-    100% {transform: translateX(-10px);}
-}
 
 #registration-from {
     width: 50%;
@@ -92,15 +76,10 @@
     justify-content: center;
     flex-direction: column;
     
+    
 }
 
-#registration-from .img{
-    margin: auto; 
-}
 
-#registration-from .img img{
-    width: 80px;
-}
 
 #registration-from .form-item{
     /* border: 1px solid red; */

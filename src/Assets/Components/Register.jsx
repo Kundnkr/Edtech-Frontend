@@ -62,8 +62,8 @@ export default function Register() {
             <section className="registration-box">
             <div className="content">
                 <div className="disc">
+                <img className='aimLogo' src={AIM} alt="" />
                     <img className='keyboy' src={profilepic} alt="" />
-                    <img className='aimLogo' src={AIM} alt="" />
                 </div>
             </div>
             
@@ -105,7 +105,7 @@ export default function Register() {
                         <label htmlFor="">Confirm Password</label>
                     </div>
 
-                    <button disabled = {isloading} >REGISTER</button>
+                    <button disabled = {isloading}>REGISTER</button>
                 </form>
             </div>
         </section>

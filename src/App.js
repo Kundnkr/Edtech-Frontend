@@ -9,7 +9,7 @@ import NavBar from './Assets/Components/NavBar';
 import Home from './Assets/Components/Home';
 import StudentProfile from './Assets/Components/StudentProfile';
 import ProfileManagement from './Assets/Components/ProfileManagement';
-import Loading from './Assets/Components/Loading';
+import About from './Assets/Components/About';
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
         <Route path='/login' element={<Login/>} ></Route>
         <Route path='/change_password' element={<ResetPass/>} ></Route>
         <Route path='/forget_password' element={<ForgetPass/>} ></Route>
+        <Route path='/aboutus' element={<About/>} ></Route>
       </Routes>
     </Router>
   );

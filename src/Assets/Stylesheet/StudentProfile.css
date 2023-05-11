@@ -45,7 +45,7 @@
 }
 .input-item label{
     font-size: 20px;
-    color: white;
+    color: black;
     margin-bottom: 5px;
 }
 
@@ -61,7 +61,7 @@ input{
 
 .input-item input[type="button"]{
     cursor: pointer;
-    background-color: red;
+    background-color:white;
     font-size: 18px;
     transition: 0.3s;
     
@@ -69,7 +69,7 @@ input{
 
 
  input[type="button"]:hover, [type="submit"]:hover{
-    background-color: rgb(136, 9, 9);
+    background-color: rgb(125, 125, 125);
 
 }
 

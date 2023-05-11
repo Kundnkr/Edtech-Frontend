@@ -8,21 +8,7 @@ import { useNavigate} from 'react-router-dom';
 export default function EmailVerify() {
     const Navigate = useNavigate();
 
-    useEffect(() => {
-        let otpInput = document.querySelector('.otpInput');
-        const handleKeyPress = (event) => {
-          if (event.key === "Enter") {
-            event.preventDefault();
-            otpInput.nextSibling();
-          }
-        }
-    
-    
-        otpInput.addEventListener('keypress', handleKeyPress);
-        return () => {
-            otpInput.removeEventListener('keypress', handleKeyPress);
-        }
-      }, []);
+   
 
     let filled = "";
     let ChangeHandler = (e) => {
@@ -54,12 +40,12 @@ export default function EmailVerify() {
                         Please verify the email address by entering the otp you recived on your mail</p>
                 </div>
                 <form onSubmit={submithandler} className="otp-content">
-                    <div className="email-input-item">
+                    <form className="email-input-item">
                         <input className='otpInput' type="text" onChange={ChangeHandler} maxLength={1} />
                         <input className='otpInput' type="text" onChange={ChangeHandler} maxLength={1} />
                         <input className='otpInput' type="text" onChange={ChangeHandler} maxLength={1} />
                         <input className='otpInput' type="text" onChange={ChangeHandler} maxLength={1} />
-                    </div>
+                    </form>
                     <button type='submit'>Verify</button>
                 </form>
             </div>

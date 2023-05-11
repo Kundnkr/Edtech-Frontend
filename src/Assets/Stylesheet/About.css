@@ -1,0 +1,43 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 90%;
+    height: 90vh;
+    margin: auto ;
+    align-items: center;
+
+}
+.about-container .about-content{
+    width: 50%;
+}
+.about-container .about-content h1{
+    margin-bottom: 30px;
+    font-size: 55px;
+    position: relative;
+}
+.about-container .about-content p{
+    line-height: 25px;
+}
+.about-container .about-content span{
+    color: red;
+    font-weight: 700;
+}
+.about-container .about-content p::first-letter{
+    font-size: 20px;
+}
+.about-container .about-content h1::before{
+    content: ' ';
+    position: absolute;
+    width: 25%;
+    height: 95%;
+    border-bottom: 3px solid red;
+}
+
+.about-container .pic{
+    width: 45%;
+}
+
+.about-container .pic img{
+    width: 100%;
+}
