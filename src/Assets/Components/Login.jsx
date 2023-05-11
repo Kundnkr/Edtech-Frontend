@@ -3,9 +3,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import loginGIF from '../Images/loginGIF.gif'
+import Loading from '../Components/Loading'
 
 export default function Login() {
-
+    const [isloading, setisloading] = useState(false)
 
     const [user, setuser] = useState({
         email: "",
@@ -23,13 +24,16 @@ export default function Login() {
             password: user.password
         }
         axios.post('https://testapp-9prn.onrender.com/api/login/', userdata).then((res) => {
-            alert(res.data.msg + " with token id :" + res.data.token);
+            setisloading(false);    
+        alert(res.data.msg + " with token id :" + res.data.token);
         }).catch((err) => {
+            setisloading(false);
             alert("Inviled Crediential");
         })
     }
     return (
         <>
+        {(isloading)?<Loading/>:""}
             <div className="login-page">
                 <div className='side-temp'>
                     <img src={loginGIF} alt="" />
