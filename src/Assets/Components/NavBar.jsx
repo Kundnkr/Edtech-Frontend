@@ -10,6 +10,7 @@ export default function NavBar() {
                     <img src={AimWhite} alt="" />
                     </div>
                 <div className="items">
+                <Link to='/aboutus'>ABOUT US</Link>
                     <div className="dropdown">
                         <Link className='dropdownCourses'>COURSES</Link>
                         <div className="dropdowmItem">
@@ -44,10 +45,9 @@ export default function NavBar() {
                             </div>
                         </div>
                     </div>
-                    <Link to="/profilemgmt">PROFILE</Link>
                     <Link to="/sign-up">SIGN UP</Link>
                     <Link to="/login">LOGIN</Link>
-                    <Link to='/aboutus'>ABOUT US</Link>
+                    
                     
                 </div>
             </header>

@@ -74,7 +74,7 @@ a{
 .dropdown:hover .dropdowmItem{
   display: flex;
   position: absolute;
-  right: 500px;
+  /* right: 500px; */
 }
 
 .dropdowmItem div{
@@ -90,7 +90,7 @@ a{
   align-items: center;
   
   position: absolute;
-  left: 297px;
+  left: -297px;
   z-index: 100;
 }
 .dropdowmItem div:hover{
