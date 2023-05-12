@@ -1,5 +1,5 @@
-import '../Stylesheet/EmailVerify.css'
-import { React, useEffect } from 'react'
+import '../Stylesheet/EmailVerify.css';
+import { React, useEffect } from 'react';
 import mail from '../Images/mail.png';
 import axios from 'axios';
 import { email } from './Register';

@@ -5,6 +5,10 @@ import axios from 'axios'
 import loginGIF from '../Images/loginGIF.gif'
 import Loading from '../Components/Loading'
 
+
+
+
+
 export default function Login() {
     const [isloading, setisloading] = useState(false)
 
@@ -26,7 +30,9 @@ export default function Login() {
         }
         axios.post('https://testapp-9prn.onrender.com/api/login/', userdata).then((res) => {
             setisloading(false);    
-        alert(res.data.msg + " with token id :" + res.data.token);
+            let registrationForm = document.getElementById('form');
+            registrationForm.reset();
+        alert("Login successful");
         }).catch((err) => {
             setisloading(false);
             alert("Invalid Crediential");
@@ -39,7 +45,7 @@ export default function Login() {
                 <div className='side-temp'>
                     <img src={loginGIF} alt="" />
                 </div>
-                <form onSubmit={submithandler}>
+                <form id='form' onSubmit={submithandler}>
                     <h1>Login</h1>
                     <div className="input-box-login">
                         <input required type="email" className='email' id='email' name='email' onChange={changehandler} />

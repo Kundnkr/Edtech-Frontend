@@ -29,7 +29,7 @@ export default function ForgetPass() {
                     <form onSubmit={submithandler}>
                         <input type="password" placeholder='Password' onChange={chnagehandler} name='old_password' />
                         <input type="password" placeholder='Confirm Password' onChange={chnagehandler} name='confirm_password' />
-                        <button>Forget Password</button>
+                        <button>Change Password</button>
                     </form>
 
                 </div>
