@@ -11,7 +11,7 @@ export default function NavBar() {
                     </div>
                 <div className="items">
                 <Link to='/aboutus'>ABOUT US</Link>
-                    <div className="dropdown">
+                    {/* <div className="dropdown">
                         <Link className='dropdownCourses'>COURSES</Link>
                         <div className="dropdowmItem">
                             <Link className='webdev' to="/courses">Web Development</Link>
@@ -44,7 +44,7 @@ export default function NavBar() {
                                 <Link>Quality improvement</Link>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <Link to="/sign-up">SIGN UP</Link>
                     {/* <Link to="/login">LOGIN</Link> */}
                     
