@@ -3,7 +3,7 @@
     margin-top: 0%;
     width: 100%;
     height: 95vh;
-    background-image: url(../Images/forget.jpeg);
+    /* background-image: url(../Images/forget.jpeg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,23 +11,25 @@
     justify-content: right;
     align-items:center ;
 }
-.change_password{
+
+.change_password {
     display: flex;
-    width: 40%;
+    width: 60%;
     padding: 20px;
-    border-radius: 35px;
+    border-radius: 15px;
     margin: auto;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid rgb(182, 181, 181);
+    background-color: aliceblue;
+    /* border: 1px solid rgb(182, 181, 181);
     
-    background: linear-gradient(90deg, rgba(210, 238, 255, 0.981) 0%, rgb(33, 47, 240) 100%);
+    background: linear-gradient(90deg, rgba(210, 238, 255, 0.981) 0%, rgb(33, 47, 240) 100%); */
 }
 .change_password div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
 }
 .change_password div img{
     margin:auto;
@@ -37,9 +39,17 @@
 
 .change_password div h1{
     margin-bottom: 10px;
-    color: white;
+    color: #ff3a3a;
 }
 
+.Top-forget {
+    text-align: center;
+}
+
+.input-boxs {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
 .change_password form{
     width: 70%;
     margin: auto;
@@ -51,7 +61,8 @@
     border: 1px solid rgb(174, 174, 174);
     margin-bottom: 10px;
     padding-left: 10px;
-
+    width:50%;
+    margin:0 auto;
 }
 
 .change_password form input:focus{

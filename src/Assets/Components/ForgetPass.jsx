@@ -22,14 +22,22 @@ export default function ForgetPass() {
             <section className='forgetPassword'>
                 <div className="change_password">
                     <div>
-                        <img src={pass} alt="" />
-                        <h1>Forget Password</h1>
+                         <div className="Top-forget">
+                            <img src={pass} alt="" />
+                            <h1>Forgot Password</h1>
+                            <p>Enter The Email address<br/> associated with your account</p>
+                        </div>
 
                     </div>
                     <form onSubmit={submithandler}>
-                        <input type="password" placeholder='New Password' onChange={chnagehandler} name='old_password' />
-                        <input type="password" placeholder='Confirm New Password' onChange={chnagehandler} name='confirm_password' />
-                        <button>Change Password</button>
+                        {/* <input type="password" placeholder='New Password' onChange={chnagehandler} name='old_password' />
+                        <input type="password" placeholder='Confirm New Password' onChange={chnagehandler} name='confirm_password' /> */}
+                        <div className="input-boxs">
+                        {/* <label htmlFor="email">Enter your Email</label> */}
+                        <input required type="email" name='email' placeholder="Enter your Email"/> 
+                    </div>
+
+                        <button>Send</button>
                     </form>
 
                 </div>

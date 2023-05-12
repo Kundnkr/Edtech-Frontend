@@ -46,7 +46,7 @@ export default function NavBar() {
                         </div>
                     </div>
                     <Link to="/sign-up">SIGN UP</Link>
-                    <Link to="/login">LOGIN</Link>
+                    {/* <Link to="/login">LOGIN</Link> */}
                     
                     
                 </div>

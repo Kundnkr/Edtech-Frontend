@@ -60,16 +60,9 @@ export default function Register() {
         <>
         {(isloading)?<Loading/>:""}
             <section className="registration-box">
-            <div className="content">
-                <div className="disc">
-                <img className='aimLogo' src={AIM} alt="" />
-                    <img className='keyboy' src={profilepic} alt="" />
-                </div>
-            </div>
-            
             <div id='registration-from' className='registration-from' onSubmit={handlesubmit} >
                 <form id='form' className="form-item">
-                    <h1>Registrations</h1>
+                    <h1>Create an Account</h1>
 
                     <div className="input-box">
                         <input required type="text" name='username' id='username'  onChange={handlechange} />
@@ -97,17 +90,29 @@ export default function Register() {
                     </div>
 
                     <div className="input-box">
-                        <input required type="password" minlength="6" maxlength="15" name='password' onChange={handlechange} />
+                        <input type="password" minlength="6" maxlength="15" name='password' onChange={handlechange} required />
                         <label htmlFor="password">Password</label>
                     </div>
                     <div className="input-box">
                         <input required type="password" minlength="6" maxlength="15" name='confirm_password'  onChange={handlechange} />
                         <label htmlFor="">Confirm Password</label>
                     </div>
-
-                    <button disabled = {isloading}>REGISTER</button>
+                   <div className="sign">
+                      <button disabled = {isloading}>Sign Up</button>
+                    </div>
+                    <div className="Have-account">
+                        <p>Already have a account? <a href="/login">Log in</a></p>
+                    </div>
                 </form>
             </div>
+            <div className="content">
+                <div className="disc">
+                <img className='aimLogo' src={AIM} alt="" />
+                    <img className='keyboy' src={profilepic} alt="" />
+                </div>
+            </div>
+            
+           
         </section>
         </>
     )
