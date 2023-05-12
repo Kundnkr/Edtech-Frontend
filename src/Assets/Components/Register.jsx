@@ -69,7 +69,7 @@ export default function Register() {
             
             <div id='registration-from' className='registration-from' onSubmit={handlesubmit} >
                 <form id='form' className="form-item">
-                    <h1>Registration</h1>
+                    <h1>Registrations</h1>
 
                     <div className="input-box">
                         <input required type="text" name='username' id='username'  onChange={handlechange} />
