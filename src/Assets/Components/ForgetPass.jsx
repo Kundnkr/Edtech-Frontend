@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import pass from '../Images/pass.png'
+import foregt from '../Images/foregt.jpg'
 import '../Stylesheet/ResetPass.css'
 import axios from 'axios'
 
@@ -21,24 +21,29 @@ export default function ForgetPass() {
         <>
             <section className='forgetPassword'>
                 <div className="change_password">
+                <img src={foregt} alt="" />
                     <div>
                          <div className="Top-forget">
-                            <img src={pass} alt="" />
-                            <h1>Forgot Password</h1>
-                            <p>Enter The Email address<br/> associated with your account</p>
-                        </div>
-
-                    </div>
-                    <form onSubmit={submithandler}>
+                            <h1>Forgot Password?</h1>
+                            <p>No Worries ,we'll send you reset instructions.</p>
+                            <form onSubmit={submithandler}>
                         {/* <input type="password" placeholder='New Password' onChange={chnagehandler} name='old_password' />
                         <input type="password" placeholder='Confirm New Password' onChange={chnagehandler} name='confirm_password' /> */}
                         <div className="input-boxs">
                         {/* <label htmlFor="email">Enter your Email</label> */}
                         <input required type="email" name='email' placeholder="Enter your Email"/> 
                     </div>
-
-                        <button>Send</button>
+                    <div className="send-mail">                        
+                      <button>Send Email</button>
+                    </div>
+                    <div className="bback-login">  
+                        <a href = "/Login">back to log in</a>
+                    </div>
                     </form>
+                        </div>
+
+                    </div>
+                
 
                 </div>
 
