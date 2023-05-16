@@ -11,9 +11,9 @@
     min-height: 60vh;
     padding: 20px;
     border-radius: 30px;
-    border: 1px solid rgb(157, 155, 155);
+    /* border: 1px solid rgb(157, 155, 155); */
     text-align: center;
-    background: linear-gradient(90deg, rgba(241, 55, 55, 0.9810049019607843) 0%, rgba(32, 39, 136, 1) 100%);
+    /* background: linear-gradient(90deg, rgba(241, 55, 55, 0.9810049019607843) 0%, rgba(32, 39, 136, 1) 100%); */
   }
 
   .userEmail{

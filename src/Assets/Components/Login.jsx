@@ -44,8 +44,7 @@ export default function Login() {
             <div className="login-page">
                 <div className='side-temp'>
                     <img src={loginGIF} alt="" />
-                </div>
-                <form id='form' onSubmit={submithandler}>
+                    <form id='form' onSubmit={submithandler}>
                     <h1>Login</h1>
                     <div className="input-box-login">
                         <input required type="email" className='email' id='email' name='email' onChange={changehandler} />
@@ -61,6 +60,8 @@ export default function Login() {
                     </div>
                     <button >Login</button>
                 </form>
+                </div>
+            
             </div>
 
         </>

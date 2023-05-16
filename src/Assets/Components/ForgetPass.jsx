@@ -37,7 +37,7 @@ export default function ForgetPass() {
                       <button>Send Email</button>
                     </div>
                     <div className="bback-login">  
-                        <a href = "/Login">back to log in</a>
+                    <i class="fa-sharp fa-light fa-arrow-left"></i> <a href = "/Login">  back to log in</a>
                     </div>
                     </form>
                         </div>
